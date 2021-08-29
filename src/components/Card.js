@@ -1,5 +1,5 @@
 import React from 'react';
-import {menu} from "../menu";
+import menu from "../menu";
 
 export default function Card ({object, index, setComplete}) {
     const { name, description, price, image } = object;

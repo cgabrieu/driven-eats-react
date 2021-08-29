@@ -10,7 +10,7 @@ export default function Footer({ complete }){
             <button className="botao-concluir flex-center fechar-pedido-botao" onClick={() => {
                 history.push('/revisar');
             }}>Fechar o pedido</button> :
-            <button className="botao-concluir flex-center">Selecione os 3 itens para fechar o pedido</button>}
+            <button className="botao-concluir flex-center">Selecione cada categoria para fechar o pedido</button>}
         </footer>
     );
 };

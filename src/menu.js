@@ -1,4 +1,4 @@
-export const menu = [
+const menu = [
     {
         type: "prato",
         name: "Tudo Burger",
@@ -80,3 +80,5 @@ export const menu = [
         quantity: 0
     },
 ]
+
+export default menu;

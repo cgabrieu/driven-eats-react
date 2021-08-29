@@ -1,4 +1,4 @@
-import {menu} from "../menu";
+import menu from "../menu";
 import Card from "./Card"
 
 export default function Section({ section, title, setComplete }) {

@@ -8,7 +8,6 @@ import Footer from '../components/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 export default function App() {
-
     const [complete, setComplete] = React.useState(false);
 
     return (
