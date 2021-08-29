@@ -9,15 +9,13 @@ export default function Card ({object, index, setComplete}) {
 
     const increaseQuant = (e) => {
         e.stopPropagation();
-        if (quant < 10) setQuant(quant+1);
-        menu[index].quantity++;
+        if (menu[index].quantity < 10) setQuant(++menu[index].quantity);
         checkSections();
     }
-
+    
     const decreaseQuant = (e) => {
         e.stopPropagation();
-        if (quant > 0 ) setQuant(quant-1);
-        menu[index].quantity--;
+        if (menu[index].quantity > 0) setQuant(--menu[index].quantity);
         checkSections();
     }
 

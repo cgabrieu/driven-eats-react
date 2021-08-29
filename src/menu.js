@@ -67,7 +67,7 @@ const menu = [
         type: "sobremesa",
         name: "Sundae Chocolate",
         description: "1 sundae de chocolate 250ml",
-        price: 2.90,
+        price: 3.90,
         image: "sundae.png",
         quantity: 0
     },
