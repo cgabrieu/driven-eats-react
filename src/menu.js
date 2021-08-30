@@ -1,7 +1,3 @@
-import { xtudo } from "./assets.js";
-
-//import * as Image from "./assets.js"
-
 let menu;
 
 if (localStorage.getItem("menu") === null) {
@@ -11,8 +7,7 @@ if (localStorage.getItem("menu") === null) {
             name: "Tudo Burger",
             description: "Carne artesanal, queijo, bacon, presunto e salada",
             price: 17.90,
-            image: xtudo,
-            //image: Image.xtudo,
+            image: "xtudo.jpg",
             quantity: 0
         },
         {

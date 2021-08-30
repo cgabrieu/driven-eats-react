@@ -28,7 +28,7 @@ export default function Card ({object, index, setComplete}) {
     return (
         <li className={(quant > 0) ? "card selecionado" : "card"} onClick={increaseQuant}>
             <div className="conteudo-card">
-                <img src={image} alt={name} />
+                <img src={"images/"+image} alt={name} />
                 <h4>{name}</h4>
                 <h5>{description}</h5>    
                 <div className="container">
