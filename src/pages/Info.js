@@ -2,7 +2,7 @@ import menu from "../menu";
 import SendMessage from "../components/Message";
 import { useHistory } from "react-router-dom";
 
-export default function Revise() {
+export default function Info() {
 
     localStorage.setItem("menu", JSON.stringify(menu));
 
@@ -11,9 +11,9 @@ export default function Revise() {
     return (
         <div className="fundo-confirme-pedido">
             <div>
-                <h2>Revise seu pedido</h2>
+                <h2>Confirme suas informações</h2>
                 <div className="popup-confirme-pedido">
-                    <OrderItems total={total} />
+                    <Info total={total} />
                 </div>
             </div>
             <ReviseButtons total={total} />
@@ -21,7 +21,7 @@ export default function Revise() {
     );
 }
 
-const OrderItems = ({ total }) => (
+const Info = ({ total }) => (
     <div className="pedido-itens">
         {menu.map((e, key) => (e.quantity > 0) ? <Item key={key} name={e.name} quantity={e.quantity} price={e.price} /> : "")}
         <div className="linha-total flex-space-between">
@@ -49,8 +49,3 @@ const ReviseButtons = ({ total }) => (
         <button className="botao-popup botao-cancelar" onClick={useHistory().goBack}>Cancelar</button>
     </>
 );
-
-const toFormat = (value) => {
-    const format = { minimumFractionDigits: 2, style: 'currency', currency: 'BRL' };
-    return (value.toLocaleString('PT-br', format));
-}

@@ -193,7 +193,8 @@ main {
 
 .fundo-confirme-pedido {
     position: absolute;
-    top: 0; bottom: 0; right: 0; left: 0;
+    top: 0; right: 0; left: 0;
+    height: 100%;
     background-color: #E5E5E5;
     display: flex;
     align-items: center;
@@ -201,7 +202,7 @@ main {
 }
 
 .fundo-confirme-pedido > div {
-    margin-top: 130px;
+    margin-top: 120px;
     width: 90%;
     max-width: 377px;
 }
@@ -234,8 +235,6 @@ main {
     display: flex;
 }
 
-
-
 .linha-total {
     font-weight: bold;
     margin-top: 15px;
@@ -260,3 +259,29 @@ main {
     color: #777777;
     font-size: 20px;
 }
+
+@media (max-width: 360px) {
+    .fundo-confirme-pedido > div {
+        width: 95%;
+    }
+
+    .pedido-itens {
+        margin: 5px 0;
+    }
+
+    .popup-confirme-pedido {
+        padding: 5px 7px;
+    }
+
+    .fundo-confirme-pedido > div {
+        margin-top: 100px;
+    }
+
+    .popup-confirme-pedido {
+        margin: 15px 0;
+    }
+
+    .botao-popup {
+        padding: 5px 15px;
+    }
+  }
