@@ -12,6 +12,14 @@ if (localStorage.getItem("menu") === null) {
         },
         {
             type: "prato",
+            name: "Tabule",
+            description: "Trigo fino, tomate, cebola, salsinha e hortelã fresca",
+            price: 13.90,
+            image: "tabule.png",
+            quantity: 0
+        },
+        {
+            type: "prato",
             name: "Prato Básico",
             description: "Arroz, estrogonofe de carne e batata palha",
             price: 14.90,
